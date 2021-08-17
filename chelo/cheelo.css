@@ -35,6 +35,11 @@ header .logo {
     transition: 0.6s;
 }
 
+header .logo img {
+    width: 50%;
+    height: 50%;
+}
+
 header ul {
     position: relative;
     display: flex;
