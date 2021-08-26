@@ -64,7 +64,12 @@ header ul li a {
     transition: 0.6s;
 }
 
+header ul li a:hover {
+    color: darkgrey;
+}
+
 .inicio {
+    background-image: url("../../assets/CheloAssets/wallpaperbetter.com_1920x1080.jpg");
     color: #fff;
     position: relative;
     padding-left: 5%;
@@ -73,11 +78,12 @@ header ul li a {
 }
 
 footer {
-    color: #fff;
+    color: #000;
     bottom: 0px;
     position: relative;
     width: 100%;
     text-align: center;
+    background-color: darkgrey;
 }
 
 
