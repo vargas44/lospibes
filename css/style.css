@@ -104,7 +104,7 @@ header ul li a
     left: 0;
     width: 100%;
     height: 100%;
-    background: #333;
+    background: #000;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -120,7 +120,7 @@ header ul li a
     left: -75px;
     top: calc(50% - 75px);
     transition: 0.5s ease-in-out;
-    background: #ff0057;
+    background: #000;
 }
 
 .container .card .imgbx::before{

@@ -14,6 +14,7 @@ body{
     align-items: center;
     background: #222;
     min-height: 100vh;
+    background: url(/views/Norkot/img/Banner.jpg);
 }
 
 
@@ -66,70 +67,125 @@ header ul li a
 }
 
 /*---------------------navbar----------------------*/
+producto-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+  width: 100%;
+}
 
-.banner img
+.producto img
 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;  
+    width: 50%;
 }
 
-
-
-/*---------------------tarjetas----------------------*/
-
-body{
-    background: linear-gradient(45deg,#8500ff, #5acaff);
-    height: 10%;
+.producto {
+  width: 250px;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  position: relative;
+  margin: 10px 30px;
 }
-.container{
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-    border-radius: 10px;*/
-    width: 100%;
-    height: 100%;
+
+.producto p {
+  color: #4d4d4d;
+  font-family: myriad pro;
+  font-size: 0.9rem;
+  letter-spacing: 0.5;
+}
+
+.precio {
+  color: #4d4d4d;
+  font-family: popins;
+  font-size: 1rem;
+}
+
+.boton-producto {
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: calibri;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+  background: linear-gradient(120deg, #2d6cdf 20%, #21bdde);
+  color: #ffffff;
+  display: none;
+  animation: fade 0.2s;
+}
+
+.producto:hover .boton-producto {
+  display: flex;
+}
+
+.producto:hover {
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*---------------------banner----------------------*/
+
+.unidad {
     display: flex;
-    justify-content: center;
+    width: 85%;
+    margin: 30px 40px;
+    justify-content: space-around;
     align-items: center;
-    background: url('./'), #151729;
-    box-shadow: 0 15px 30px rgb(0, 0, 0,.5);
-}
-.container .contenido{
-    max-width: 600px;
-    text-align: center;
-    justify-content: center;
-}
-.container .contenido h2{
-    font-size: 10vw;
-    color: #fff;
-    line-height: 1em;
-}
-.container .contenido h4{
-    position: relative;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #111;
-    background: #fff;
-    font-weight: 300;
-    padding: 10px 20px;
-    display: inline-block;
-}
-.container .contenido p{
-    color: #fff;
-    font-size: 1.2em;
-}
-.container .contenido a{
-    position: relative;
-    display: inline-block;
-    padding: 10px 25px;
-    background: #ff0562;
-    color: #fff;
-    text-decoration: none;
-    margin-top: 25px;
-    border-radius: 25px;
-    border-bottom: 4px solid #d00d56;
-}
+    padding: 30px;
+    background-color: rgba(25, 25,25, 0.4);
+  }
+  .unidad-img img
+  {
+      width: 180px;
+      box-sizing: border-box;  
+  }
+  
+  .unidad-text {
+    width: 40%;
+    font-family: myriad pro;
+  }
+  
+  .unidad-text h3 {
+    color:	rgb(30, 144, 255);
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0px;
+  }
+  
+  .unidad-text h4 {
+    color:	rgb(30, 144, 255);
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0px;
+  }
+  
+  .unidad-text font {
+    color: azure;
+  }
+  
+  .unidad-text p {
+    font-size: 1rem;
+    color: #bdbdbd;
+    letter-spacing: 0.5px;
+  }
+  
